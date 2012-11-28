@@ -14,7 +14,7 @@ def about(request):
 	return render_to_response("about.html",locals(),context_instance=RequestContext(request))
 
 def services(request):
-	return render_to_response("services.html",locals(),context_instance=RequestContext(request))
+	return render_to_response("services_bs.html",locals(),context_instance=RequestContext(request))
 
 def shop_online(request):
 	return render_to_response("shop_online.html",locals(),context_instance=RequestContext(request))

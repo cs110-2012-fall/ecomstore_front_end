@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block lightviewCSS %}
+<!-- Lightview -->
+<link rel="stylesheet" type="text/css" href="/static/css/lightview.css"/>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="scripts/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/static/scripts/spinners.min.js"></script>
+<script type="text/javascript" src="/static/scripts/lightview.js"></script>
+{% endblock %}
+{% block body_header%}
+<body class="about">
+{% endblock%}
+
+{% block site_wrapper %}
+<!-- You're code goes here, save all css modifications to about_style.css
+DO NOT modify any existing css classes because it could effect other pages that
+use that class. If you see something you like but needs to be tweaked just a little,
+just copy the contents, make the tweak, but give it a different name, and save the 
+new css class into about_style.css
+Make sure you use unique class names in your css file because about_style.css
+will be merged with other css files later on.  
+ 
+A few helpful tips that might save you some time
+1) if you want to add a photo, first save it in ecomstore/templates/images
+the path becomes /static/images/<name of file>
+2) How an element gets placed on the page is determine by not only its own 'position'
+   attribute, but its parent's 'position' attribute as well. Generally you want to
+   place absolute positioned items inside of a parent whose position attribute is relative
+3) The pages with a '_bs' at the end have the generic bootstrap theme, you can use those as
+building blocks if you like, remember, dont edit the bootstrap css files though.
+4) Feel free to add javascript if you like, theres tons of cool free scripts out online
+   that may just need a few tweaks to fit our page
+
+-->
+<div class="e-padding-wrapper" align="center">
+<h1>Meet Michael Collins, Your Quality Jeweler</h1>
+<p align="justify">
+<img src ="static/images/selfWorking.jpg" alt ="self-working" style ="display: inline-block; float: left; padding-right: 10px;" >
+Jewelry has been the focus of Michael Collins' life since the day in 1968 that he entered a St. Louis jewelry store looking for a job that would help him pay his rent. Recognizing his talent, the store owners sent him to Kansas City for additional training and also facilitated his ability to earn a college degree in marketing/advertising.</br></br>
+
+Michael worked for a large jeweler for seven years, opening stores in seven different states. A competitor recruited him to the San Diego area, where he was responsible for several of its local jewelry stores for more than four years. After nearly a decade of working for other people, Michael realized the only way to have total control over the quality of the jewelry he sold was to have his own store.</br></br>
+
+Since 1980, that store, Michael A. Collins-Fine Jewelers, has been a fixture in La Mesa, and attracted customers from throughout San Diego. Word-of-mouth has been Michael's predominant advertising vehicle, which speaks to the high quality of his work.</br></br>
+
+Michael helps customers bring their jewelry design concepts to reality. Starting with an idea on paper, he produces a wax carving and then casts it in silver, gold or platinum. Michael also loves working with color; he has three people who travel the world to find interesting pieces for him in all hues.</br></br>
+
+Michael offers:</br></br>
+
+The best quality diamonds.</br>
+Diamonds at the best prices.</br>
+Unmatched service and return policies.</br>
+The best jewelry guidance and education.</br>
+In addition to serving as a full-service jeweler, Michael is an excellent corporate citizen. He supports many local organizations, including the East County Boys and Girls Club, Grossmont High School's Partners in Education, Grossmont Hospital Foundation, Soroptimist, La Mesa Rotary, and the Jared Meeker Foundation.</br>
+</p>
+</div>
+{% endblock %}

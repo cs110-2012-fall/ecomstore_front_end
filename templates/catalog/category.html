@@ -1,5 +1,6 @@
 {% extends "catalog.html" %}
 {% load catalog_filters %}
+{% load mod_module %}
 {% block catalog_content %}
 <h1>{{ c.name }}</h1>
 {{ c.description }}
@@ -8,6 +9,15 @@
 	<div class="product_thumbnail">
 		<img src="/static/user_images/{{p.thumbnail}}">
 		<a href="{{ p.get_absolute_url }}">
+		
+
+		  {% if  forloop.counter|mod:3 %}
+		     123
+		  {% endif %}
+
+		  
+		
+		
 		
 		{{ p.name }}
 		</a>

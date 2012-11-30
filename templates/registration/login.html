@@ -1,28 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
 {% if form.errors %}
-<ul class="errorlist">
-<li>You entered an invalid username or password.</li>
-</ul>
-<br />
+	<ul class="errorlist">
+		<li>You entered an invalid username or password.</li>
+	</ul>
+	<br />
 {% endif %}
-<form method="post" action="{% url django.contrib.auth.views.login %}">{% csrf_token %}
-<table summary="Login" id="login">
-<caption>Login</caption>
-<tr>
-<td>{{ form.username.label_tag }}:</td>
-<td>{{ form.username }}</td>
-</tr>
-<tr>
-<td>{{ form.password.label_tag }}:</td>
-<td>{{ form.password }}</td>
-</tr>
-<tr>
-<td colspan="2" class="right">
-<input type="submit" value="Login" />
-</td>
-</tr>
-</table>
-<input type="hidden" name="next" value="{{ next }}" />
-</form>
+
+
+<div class="container" style="width:300px;">
+		<div class="content">
+			<div class="row">
+				<div class="login-form">
+					<h2>Login</h2>
+					<form method="post" action="{% url django.contrib.auth.views.login %}">
+					{% csrf_token %}
+						<fieldset>
+							<div class="clearfix">
+								<input type="text" style="width:200px;height:30px;" name="username"placeholder="Username">
+							</div>
+							<div class="clearfix">
+								<input type="password" style="width:200px;height:30px;" name="password" placeholder="Password">
+							</div>
+							<button class="btn btn-info" type="submit" value="Login">Sign in</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /container -->
+
 {% endblock %}

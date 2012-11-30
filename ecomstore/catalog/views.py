@@ -15,6 +15,7 @@ def index(request, template_name="catalog/index.html"):
 def show_category(request, category_slug, template_name="catalog/category.html"):
     """ view for each individual category page """
     c = get_object_or_404(Category, slug=category_slug)
+    count = 0
     products = c.product_set.all()
     page_title = c.name
     meta_keywords = c.meta_keywords

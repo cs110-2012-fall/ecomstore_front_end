@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     (r'services.html','ecomstore.preview.views.services'),
     (r'index.html'    ,'ecomstore.preview.views.home'),
     (r'shop_online.html',include('ecomstore.catalog.urls')),
+  
     # Examples:
     # url(r'^$', 'ecomstore.views.home', name='home'),
     # url(r'^ecomstore/', include('ecomstore.foo.urls')),

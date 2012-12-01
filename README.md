@@ -1,4 +1,4 @@
-##Our django project, with front code in template folder
+##Our full django project, with front code in template folder
 
 In order to run the project, please install **django1.4** and **python** first. Also you need a **Mysql database**
 running on your local computer.
